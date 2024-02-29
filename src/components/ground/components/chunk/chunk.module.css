@@ -1,0 +1,14 @@
+.chunk {
+  width: 25px;
+  height: 25px;
+  border: solid 1px black;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.coordinates {
+  font-size: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
