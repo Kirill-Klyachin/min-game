@@ -1,7 +1,7 @@
 import express from "express";
 import path from "path";
 
-const PORT = process.env.REACT_APP_PORT ?? 4040;
+const PORT = process.env.REACT_APP_PORT ?? 3040;
 
 const app = express();
 
