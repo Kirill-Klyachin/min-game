@@ -15,15 +15,15 @@ export const MainLayout = () => {
 
   const handleClick = async () => {
     try {
-      setId(0);
-      sessionStorage.removeItem(USER_ID);
-      document.cookie = `userId=null`;
-
       await logout({ id });
       const str = JSON.stringify({
         event: "done_step",
       });
       socket?.send(str);
+
+      setId(0);
+      sessionStorage.removeItem(USER_ID);
+      document.cookie = `userId=null`;
     } catch (e) {
       console.error(e);
     }
